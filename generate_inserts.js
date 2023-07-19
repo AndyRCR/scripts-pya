@@ -66,7 +66,7 @@ const formatCpbFec = (wb, regs) => {
     const ingenieriaResColumn = ingenieriaSheet.range(`AC2:AC${regs.ingenieria}`)
     rangeCpbFec(ingenieriaColumn, ingenieriaResColumn)
 
-    const ambientalSheet = wb.sheet('CONSULTORIA')
+    const ambientalSheet = wb.sheet('AMBIENTAL')
     const ambientalColumn = ambientalSheet.range(`N2:N${regs.ambiental}`)
     const ambientalResColumn = ambientalSheet.range(`AC2:AC${regs.ambiental}`)
     rangeCpbFec(ambientalColumn, ambientalResColumn)
