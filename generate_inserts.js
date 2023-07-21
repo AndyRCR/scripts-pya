@@ -40,7 +40,7 @@ const rangeCpbFec = (c, r) => {
 
 const insertFormulas = (r, name) => {
     r.forEach((cell, i) => {
-        cell.formula(`="INSERT INTO gasto(pcg_anio, pcg_mes, gas_proyecto, gas_item_s, gas_glosa, gas_monto, dea_cuenta_s, gas_detalle, gas_proveedor, gas_fecha, gas_debe, gas_haber, gas_monto_uf, dep_codigo, gas_tipo, gas_numero, gas_ordencompra, rut_emp) VALUES (2023, 6,'"&${name}!G${i + 2}&"', '"&${name}!H${i + 2}&"','"&${name}!S${i + 2}&"',  "&${name}!V${i + 2}&",'"&${name}!B${i + 2}&"', '"&${name}!S${i + 2}&"', '"&${name}!K${i + 2}&"', '"&${name}!AC${i + 2}&"', "&${name}!T${i + 2}&", "&${name}!U${i + 2}&", NULL, NULL, '"&${name}!L${i + 2}&"', "&${name}!P${i + 2}&","&${name}!Q${i + 2}&", '"&${name}!A${i + 2}&"');"`)
+        cell.formula(`="INSERT INTO gasto(pcg_anio, pcg_mes, gas_proyecto, gas_item_s, gas_glosa, gas_monto, dea_cuenta_s, gas_detalle, gas_proveedor, gas_fecha, gas_debe, gas_haber, gas_monto_uf, dep_codigo, gas_tipo, gas_numero, gas_ordencompra, rut_emp) VALUES (2023, 2,'"&${name}!G${i + 2}&"', '"&${name}!H${i + 2}&"','"&${name}!S${i + 2}&"',  "&${name}!V${i + 2}&",'"&${name}!B${i + 2}&"', '"&${name}!S${i + 2}&"', '"&${name}!K${i + 2}&"', '"&${name}!AC${i + 2}&"', "&${name}!T${i + 2}&", "&${name}!U${i + 2}&", NULL, NULL, '"&${name}!L${i + 2}&"', "&${name}!P${i + 2}&","&${name}!Q${i + 2}&", '"&${name}!A${i + 2}&"');"`)
     })
 }
 
